@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="Sdl.CustomWizardSteps.Sample.CustomPages.SecondToLastPageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Sdl.CustomWizardSteps.Sample.CustomPages"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <TextBlock Text="This is the second-to-last custom page of the wizard."/>
+    </Grid>
+</UserControl>
