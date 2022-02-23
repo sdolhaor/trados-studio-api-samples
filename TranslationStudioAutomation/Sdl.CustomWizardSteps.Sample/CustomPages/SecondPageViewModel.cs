@@ -1,10 +1,10 @@
-﻿using Sdl.TranslationStudioAutomation.IntegrationApi.Wizard;
+﻿using Sdl.Desktop.IntegrationApi.Wizard;
 using System;
 using System.Drawing;
 
 namespace Sdl.CustomWizardSteps.Sample.CustomPages
 {
-    public class SecondPage : AbstractWizardPage
+    public class SecondPageViewModel : StudioWizardPageViewModel
     {
         public override string Id => "SecondPage";
 
@@ -17,10 +17,5 @@ namespace Sdl.CustomWizardSteps.Sample.CustomPages
         public override string HelpId => null;
 
         public override Type ViewType => typeof(SecondPageView);
-
-        public override void SetSharedData(IWizardData data)
-        {
-            //TODO: Implement.
-        }
     }
 }

@@ -84,26 +84,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomPages\LastPage.cs" />
-    <Compile Include="CustomPages\SecondToLastPage.cs" />
-    <Compile Include="CustomPages\ThirdPage.cs" />
-    <Compile Include="CustomPages\SecondPage.cs" />
-    <Compile Include="CustomPages\LastPageView.xaml.cs">
-      <DependentUpon>LastPageView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CustomPages\SecondToLastPageView.xaml.cs">
-      <DependentUpon>SecondToLastPageView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="CustomPages\ThirdPageView.xaml.cs">
-      <DependentUpon>ThirdPageView.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="CustomPages\SecondPageViewModel.cs" />
     <Compile Include="CustomPages\SecondPageView.xaml.cs">
       <DependentUpon>SecondPageView.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomPages\FirstPageView.xaml.cs">
       <DependentUpon>FirstPageView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CustomPages\FirstPage.cs" />
+    <Compile Include="CustomPages\FirstPageViewModel.cs" />
     <Compile Include="CustomAction.cs" />
     <Compile Include="PluginResources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -116,9 +104,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CustomActionIcon.ico" />
-    <None Include="Resources\SecondToLastIcon.ico" />
-    <None Include="Resources\LastIcon.ico" />
-    <None Include="Resources\ThirdIcon.ico" />
     <None Include="Resources\SecondIcon.ico" />
     <None Include="Resources\FirstIcon.ico" />
     <EmbeddedResource Include="PluginResources.resx">
@@ -140,18 +125,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="CustomPages\LastPageView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="CustomPages\SecondToLastPageView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="CustomPages\ThirdPageView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="CustomPages\SecondPageView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

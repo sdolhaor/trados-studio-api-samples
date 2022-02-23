@@ -81,16 +81,6 @@ namespace Sdl.CustomWizardSteps.Sample {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon LastIcon {
-            get {
-                object obj = ResourceManager.GetObject("LastIcon", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Sdl.CustomWizardSteps.Sample.
         /// </summary>
         internal static string Plugin_Name {
@@ -105,26 +95,6 @@ namespace Sdl.CustomWizardSteps.Sample {
         internal static System.Drawing.Icon SecondIcon {
             get {
                 object obj = ResourceManager.GetObject("SecondIcon", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon SecondToLastIcon {
-            get {
-                object obj = ResourceManager.GetObject("SecondToLastIcon", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon ThirdIcon {
-            get {
-                object obj = ResourceManager.GetObject("ThirdIcon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

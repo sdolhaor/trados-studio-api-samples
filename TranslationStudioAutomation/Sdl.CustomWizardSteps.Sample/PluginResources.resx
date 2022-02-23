@@ -124,19 +124,10 @@
   <data name="FirstIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\FirstIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LastIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\LastIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Plugin_Name" xml:space="preserve">
     <value>Sdl.CustomWizardSteps.Sample</value>
   </data>
   <data name="SecondIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\SecondIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SecondToLastIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\SecondToLastIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ThirdIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\ThirdIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

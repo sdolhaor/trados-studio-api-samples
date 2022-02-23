@@ -1,11 +1,12 @@
-﻿using Sdl.CustomWizardSteps.Sample.CustomPages;
+﻿using Microsoft.Win32;
+using Sdl.CustomWizardSteps.Sample.CustomPages;
 using Sdl.Desktop.IntegrationApi;
 using Sdl.Desktop.IntegrationApi.Extensions;
 using Sdl.Desktop.IntegrationApi.Interfaces;
+using Sdl.Desktop.IntegrationApi.Wizard;
 using Sdl.TranslationStudioAutomation.IntegrationApi.Actions;
 using Sdl.TranslationStudioAutomation.IntegrationApi.Events;
 using Sdl.TranslationStudioAutomation.IntegrationApi.Presentation.DefaultLocations;
-using Sdl.TranslationStudioAutomation.IntegrationApi.Wizard;
 using System;
 using System.Collections.Generic;
 using System.Windows;
@@ -34,13 +35,23 @@ namespace Sdl.PackagesOperations.Sample
         {
             try
             {
-                var initialWizardSteps = new List<AbstractWizardPage> { new FirstPage(), new SecondPage(), new ThirdPage() };
-                var finalWizardSteps = new List<AbstractWizardPage> { new SecondToLastPage(), new LastPage() };
+                var fileDialog = new OpenFileDialog { Filter = "SDL packages|*.sdlppx;SDL return packages|*.sdlrpx;World Server packages|*.wsxz" };
+                if (fileDialog.ShowDialog() != true)
+                {
+                    return;
+                }
+                var filePath = fileDialog.FileName;
+
+                var initialWizardSteps = new List<StudioWizardPageViewModel> 
+                {
+                    new FirstPageViewModel(), 
+                    new SecondPageViewModel()
+                };
 
                 _eventAggregator.Publish(
                     new OpenProjectPackageEvent(
-                        packageFilePath: null, job: null, iconPath: null, projectOrigin: null,
-                        firstPages: initialWizardSteps, lastPages: finalWizardSteps));
+                        packageFilePath: filePath, job: null, iconPath: null, projectOrigin: null,
+                        firstPages: initialWizardSteps));
                 _app.ExecuteAction<OpenPackageAction>();
 
             }
