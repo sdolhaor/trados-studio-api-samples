@@ -35,7 +35,7 @@ namespace Sdl.PackagesOperations.Sample
         {
             try
             {
-                var fileDialog = new OpenFileDialog { Filter = "SDL packages|*.sdlppx;SDL return packages|*.sdlrpx;World Server packages|*.wsxz" };
+                var fileDialog = new OpenFileDialog { Filter = "SDL packages (*.sdlppx)|*.sdlppx|SDL return packages (*.sdlrpx)|*.sdlrpx|World Server packages (*.wsxz)|*.wsxz" };
                 if (fileDialog.ShowDialog() != true)
                 {
                     return;
@@ -53,7 +53,6 @@ namespace Sdl.PackagesOperations.Sample
                         packageFilePath: filePath, job: null, iconPath: null, projectOrigin: null,
                         firstPages: initialWizardSteps));
                 _app.ExecuteAction<OpenPackageAction>();
-
             }
             catch (Exception exception)
             {
